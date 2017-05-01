@@ -18,11 +18,15 @@ This will do 2 things:
 
 ### Step 3: There is no Step 3!
 
-You have just created a Docker image from <50 MB that runs your application.
+You have just created a <50 MB Docker image that runs your application.
 
 Run the container using this command:
 
     $ docker run -p 3000:3000 -it --name docker-pkg-example --rm beeman/docker-pkg-example:latest
+
+Verify that it works:
+
+    $ curl localhost:3000
 
 You can stop the running container using this command:
 
