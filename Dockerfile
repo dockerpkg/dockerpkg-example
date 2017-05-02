@@ -1,3 +1,3 @@
-FROM beeman/docker-pkg-runner
+FROM dockerpkg/runner
 
 COPY app.bin /app/

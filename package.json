@@ -1,16 +1,16 @@
 {
-  "name": "docker-pkg-example",
+  "name": "dockerpkg-example",
   "version": "1.0.0",
   "description": "Example zeit/micro app running in small docker container using zeit/pkg",
   "scripts": {
-    "prebuild": "docker run -it --name docker-pkg-builder -v $(pwd):/app/ -v $(pwd)/.pkg-cache:/root/.pkg-cache --rm beeman/docker-pkg-builder:latest",
-    "build": "docker build -t beeman/docker-pkg-example:latest .",
-    "run": "docker run -it --name docker-pkg-example --rm beeman/docker-pkg-example:latest",
+    "prebuild": "docker run -it --name dockerpkg-builder -v $(pwd):/app/ -v $(pwd)/.pkg-cache:/root/.pkg-cache --rm dockerpkg/builder:latest",
+    "build": "docker build -t dockerpkg/dockerpkg-example:latest .",
+    "run": "docker run -it --name dockerpkg-example --rm dockerpkg/dockerpkg-example:latest",
     "start": "micro"
   },
   "keywords": [],
   "bin": "./index.js",
-  "author": "",
+  "author": "Bram Borggreve @beeman_nl <borggreve@gmail.com>",
   "license": "MIT",
   "dependencies": {
     "micro": "^7.3.2"
