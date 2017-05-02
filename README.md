@@ -3,9 +3,11 @@
 > Example [zeit/micro](https://github.com/zeit/micro) app running in small docker container using [dockerpkg](https://github.com/dockerpkg/dockerpkg)
 
 
-### Step 1: Clone the repository
+### Step 1: Clone the repository, install dependencies
 
     $ git clone https://github.com/dockerpkg/dockerpkg-example.git
+    $ cd dockerpkg-example
+    $ npm install
 
 ### Step 2: Run the build command
 
